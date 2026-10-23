@@ -57,3 +57,31 @@ try{
  for(const b of document.querySelectorAll('[data-tipo]'))b.addEventListener('click',()=>{tipo=b.dataset.tipo;for(const t of document.querySelectorAll('[data-tipo]')){t.classList.toggle('active',t===b);t.setAttribute('aria-pressed',String(t===b));}table();});
  el('csv').addEventListener('click',csv);el('imprimir').addEventListener('click',()=>window.print());summary();table();
 }catch(error){console.error(error);const aviso=document.createElement('p');aviso.className='erro';aviso.setAttribute('role','alert');aviso.textContent='Não foi possível carregar as apurações. O responsável precisa revisar o arquivo de dados.';const alvo=document.querySelector('main')||document.body;alvo.prepend(aviso);}
+
+/* Popup de doacao (Pix) */
+(function(){
+ const dlg=document.getElementById('doacao');
+ if(!dlg)return;
+ const PIX='00020126330014BR.GOV.BCB.PIX0111028174751275204000053039865802BR5922Guilherme Silva Borges6009SAO PAULO62140510pguAOtUdK6630453B3';
+ let origem=null;
+ function abrir(){origem=document.activeElement;dlg.hidden=false;document.body.style.overflow='hidden';var x=dlg.querySelector('.doacao-x');if(x)x.focus();}
+ function fechar(){dlg.hidden=true;document.body.style.overflow='';if(origem&&origem.focus)origem.focus();}
+ var abridor=document.getElementById('abrir-doacao');
+ if(abridor)abridor.addEventListener('click',abrir);
+ dlg.addEventListener('click',function(e){if(e.target.closest('[data-fechar]'))fechar();});
+ document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!dlg.hidden)fechar();});
+ var copiar=document.getElementById('copiar-pix'),aviso=document.getElementById('pix-copiado');
+ function responder(t){if(aviso)aviso.textContent=t;}
+ if(copiar)copiar.addEventListener('click',function(){
+  function ok(){responder('Código Pix copiado.');setTimeout(function(){responder('');},4000);}
+  function reserva(){
+   var ta=document.createElement('textarea');ta.value=PIX;ta.setAttribute('readonly','');ta.style.position='fixed';ta.style.opacity='0';
+   document.body.appendChild(ta);ta.select();var deu=false;
+   try{deu=document.execCommand('copy');}catch(err){deu=false;}
+   document.body.removeChild(ta);
+   if(deu)ok();else responder('Não foi possível copiar automaticamente.');
+  }
+  if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(PIX).then(ok,reserva);
+  else reserva();
+ });
+})();
