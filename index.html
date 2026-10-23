@@ -2,11 +2,10 @@
 <html lang="pt-BR">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Prestação de contas de doações: total arrecadado e canal para doar."><title>Doar com clareza | Transparência</title><link rel="stylesheet" href="style.css"><script src="dados.js" defer></script><script src="app.js" defer></script></head>
 <body>
-<a class="skip" href="#balanco">Ir para o balanço</a>
-<header class="top"><nav aria-label="Doação"><button class="nav-doar" id="abrir-doacao" type="button">Fazer doação</button></nav></header>
+<a class="skip" href="#balanco">Ir para os valores</a>
 <main>
-<section class="hero"><div class="verse"><p class="eyebrow verse-ref"><span></span>2 Coríntios 8:21</p><h1 class="verse-text">“Pois o que nos preocupa é procedermos honestamente, não só perante o Senhor, como também diante dos homens.”</h1></div></section>
-<section id="balanco" class="section"><div class="section-head"><div><p class="eyebrow muted">PRESTAÇÃO DE CONTAS</p><h2>O impacto em números</h2></div></div><p class="updated" id="atualizacao"></p><div class="cards"><article class="metric"><div class="metric-label">Total de doações <span aria-hidden="true">↙</span></div><p id="entradas">R$ 0,00</p><small>Contribuições recebidas</small></article></div></section>
+<section class="hero"><div class="verse"><p class="eyebrow verse-ref"><span></span>2 Coríntios 8:21</p><h1 class="verse-text">“Pois o que nos preocupa é procedermos honestamente, não só perante o Senhor, como também diante dos homens.”</h1><button class="primary" id="abrir-doacao" type="button">Fazer doação</button></div></section>
+<section id="balanco" class="section"><p class="eyebrow muted"><span></span>VALORES DE DOAÇÃO</p><p class="updated" id="atualizacao"></p><div class="cards"><article class="metric"><p id="entradas">R$ 0,00</p></article></div></section>
 </main>
 <noscript><p>Ative o JavaScript para visualizar as informações.</p></noscript>
 <div class="doacao" id="doacao" hidden><div class="doacao-fundo" data-fechar></div><div class="doacao-caixa" role="dialog" aria-modal="true" aria-labelledby="doacao-titulo"><button class="doacao-x" type="button" data-fechar aria-label="Fechar">×</button><p class="eyebrow"><span></span>PIX</p><h2 id="doacao-titulo">Fazer uma doação</h2><p class="doacao-sub">Escaneie o QR Code no app do seu banco ou copie o código Pix.</p><img class="doacao-qr" src="pix-qr.svg" alt="QR Code Pix para doação" width="210" height="210"><div class="doacao-dados"><div><span>Chave Pix</span><strong>028.174.751-27</strong></div><div><span>Nome</span><strong>Guilherme Silva Borges</strong></div><div><span>Instituição</span><strong>260 · Nu Pagamentos S.A.</strong></div><div><span>Identificador</span><strong>pguAOtUdK6</strong></div></div><button class="doacao-copiar" id="copiar-pix" type="button">Copiar código Pix</button><p class="doacao-aviso" id="pix-copiado" role="status"></p></div></div>
