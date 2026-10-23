@@ -1,0 +1,2 @@
+Coloque os comprovantes públicos nesta pasta. Exemplo de caminho em dados.js: comprovantes/recibo-001.pdf
+Nenhum comprovante acompanha os lançamentos fictícios.
