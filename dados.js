@@ -10,5 +10,7 @@ window.DADOS = {
   demonstracao: true,
   atualizadoEm: "2026-10-23",
   saldoInicialCentavos: 0,
-  movimentos: []
+  movimentos: [
+    { id: "D001", data: "2026-10-23", tipo: "entrada", descricao: "Doação de Guilherme Borges", categoria: "Doações", valorCentavos: 10000, comprovante: "" }
+  ]
 };
