@@ -8,7 +8,7 @@ window.DADOS = {
   sobre: "Este portal reúne as contribuições recebidas e as despesas do projeto. Os registros são atualizados pelo responsável pela prestação de contas, com comprovantes quando disponíveis.",
   email: "",
   demonstracao: true,
-  atualizadoEm: "2026-10-24",
+  atualizadoEm: "2026-10-28",
   saldoInicialCentavos: 0,
   movimentos: [
     { id: "D001", data: "2026-10-23", tipo: "entrada", descricao: "Doação de Guilherme Borges", categoria: "Doações", valorCentavos: 22000, comprovante: "" },
