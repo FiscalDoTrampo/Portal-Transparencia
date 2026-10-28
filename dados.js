@@ -13,6 +13,7 @@ window.DADOS = {
   movimentos: [
     { id: "D001", data: "2026-10-23", tipo: "entrada", descricao: "Doação de Guilherme Borges", categoria: "Doações", valorCentavos: 22000, comprovante: "" },
     { id: "D002", data: "2026-10-24", tipo: "entrada", descricao: "Doação de Lucas Eduardo De Morais Paiva Teles", categoria: "Doações", valorCentavos: 5000, comprovante: "" },
-    { id: "D003", data: "2026-10-28", tipo: "entrada", descricao: "Doação de Isabele Ribeiro de Morais", categoria: "Doações", valorCentavos: 3000, comprovante: "" }
+    { id: "D003", data: "2026-10-28", tipo: "entrada", descricao: "Doação de Isabele Ribeiro de Morais", categoria: "Doações", valorCentavos: 3000, comprovante: "" },
+    { id: "D004", data: "2026-10-28", tipo: "entrada", descricao: "Diego Ferreira Rezende", categoria: "Doações", valorCentavos: 47400, comprovante: "" }
   ]
 };
