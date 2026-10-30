@@ -17,6 +17,6 @@ window.DADOS = {
     { id: "D004", data: "2026-10-28", tipo: "entrada", descricao: "Diego Ferreira Rezende", categoria: "Doações", valorCentavos: 47400, comprovante: "" },
     { id: "D005", data: "2026-10-28", tipo: "entrada", descricao: "Denilson Firmino Mendoca", categoria: "Doações", valorCentavos: 15000, comprovante: "" },
     { id: "D006", data: "2026-10-28", tipo: "entrada", descricao: "Lara Fabiana Martins Assis", categoria: "Doações", valorCentavos: 20000, comprovante: "" },
-    { id: "D006", data: "2026-10-28", tipo: "entrada", descricao: "R7 Moto Peças", categoria: "Doações", valorCentavos: 15000, comprovante: "" }
+    { id: "D007", data: "2026-10-30", tipo: "entrada", descricao: "R7 Moto Peças", categoria: "Doações", valorCentavos: 15000, comprovante: "" }
   ]
 };
