@@ -8,7 +8,7 @@ window.DADOS = {
   sobre: "Este portal reúne as contribuições recebidas e as despesas do projeto. Os registros são atualizados pelo responsável pela prestação de contas, com comprovantes quando disponíveis.",
   email: "",
   demonstracao: true,
-  atualizadoEm: "2026-10-28",
+  atualizadoEm: "2026-10-30",
   saldoInicialCentavos: 0,
   movimentos: [
     { id: "D001", data: "2026-10-23", tipo: "entrada", descricao: "Doação de Guilherme Borges", categoria: "Doações", valorCentavos: 22000, comprovante: "" },
@@ -16,6 +16,7 @@ window.DADOS = {
     { id: "D003", data: "2026-10-28", tipo: "entrada", descricao: "Doação de Isabele Ribeiro de Morais", categoria: "Doações", valorCentavos: 3000, comprovante: "" },
     { id: "D004", data: "2026-10-28", tipo: "entrada", descricao: "Diego Ferreira Rezende", categoria: "Doações", valorCentavos: 47400, comprovante: "" },
     { id: "D005", data: "2026-10-28", tipo: "entrada", descricao: "Denilson Firmino Mendoca", categoria: "Doações", valorCentavos: 15000, comprovante: "" },
-    { id: "D006", data: "2026-10-28", tipo: "entrada", descricao: "Lara Fabiana Martins Assis", categoria: "Doações", valorCentavos: 20000, comprovante: "" }
+    { id: "D006", data: "2026-10-28", tipo: "entrada", descricao: "Lara Fabiana Martins Assis", categoria: "Doações", valorCentavos: 20000, comprovante: "" },
+    { id: "D006", data: "2026-10-28", tipo: "entrada", descricao: "R7 Moto Peças", categoria: "Doações", valorCentavos: 15000, comprovante: "" }
   ]
 };
